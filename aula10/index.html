@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-screen w-screen bg-[#333333] flex justify-center flex-col"> 
+    <div id="divzera" class=" flex justify-center items-center text-center absolute top-5 left-1/2 -translate-x-1/2 bg-violet-500 
+    w-50 h-20 rounded-xl shadow-lg transition-all opacity-0 -translate-y-20 duration-500 border-2 border-white">
+      <p id="resultado" class="text-white"></p>
+    </div>
+    <div
+      class="flex items-center h-80 w-80 justify-center bg-violet-500 rounded-4xl  transition-all duration-300 ease-in-out 
+            hover:-translate-y-2 shadow-xl self-center border-2 border-white"
+    >
+      <div class="flex items-center flex-col">
+        <div>
+        <p class="self-start text-white">Primeiro digito:</p>
+        <input id="n1" class="border-2 border-white text-white rounded-xl mb-10 w-45 focus:outline-none focus:border-gray-300" />
+        <p class="self-start text-white">Segundo digito:</p>
+        <input id="n2" class="border-2 border-white text-white rounded-xl mb-10 w-45 focus:outline-none focus:border-gray-300" />
+        </div>
+        <div>
+        <div class="grid grid-cols-2 gap-4">
+          <button onclick="somar()" class="border-2 text-white border-white rounded-xl w-20 cursor-pointer">
+            somar
+          </button>
+          <button onclick="multiplicar()" class="border-2 text-white border-white rounded-xl w-20 cursor-pointer">
+            multiplicar
+          </button>
+          <button onclick="dividir()" class="border-2 text-white border-white rounded-xl w-20 cursor-pointer">
+            dividir
+          </button>
+          <button onclick="subtrair()" class="border-2 text-white border-white rounded-xl w-20 cursor-pointer">
+            subtrair
+          </button>
+        </div>
+      </div>
+    </div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -11,9 +11,9 @@ while (a<=5){
 }
 console.log(b);
 let senha
-while (senha!=1234){
+do{
     senha = prompt("digita tua senha fi"); //só usavel no web
     console.log("senha errada meu filho");
-}
+}while (senha!=1234);
  console.log("acertou");
 
